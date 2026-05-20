@@ -14,6 +14,13 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
 
+.header {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -27,6 +34,11 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+}
+
+.left, .right{
+  display: flex;
+  gap: 8px;
 }
 
 button {
@@ -44,5 +56,10 @@ a {
 }
 
 ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
   list-style-type: none;
 }
