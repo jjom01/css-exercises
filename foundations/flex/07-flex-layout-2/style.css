@@ -4,39 +4,39 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 ul{
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   font-size: large;
+}
+
+li{
+  margin-bottom: 16px;
 }
 
 a{
   text-decoration: none;
   color: white;
+  font-size: 24px;
 }
 
 .main{
   display: flex;
-  flex-direction: row;
   flex: 1;
 }
 
 .card-container{
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   padding: 48px;
-  gap: 8px;
+  gap: 32px;
 }
 
 .header {
-  padding: 16px;
+  padding: 0 16px;
   background: darkmagenta;
   color: white;
   font-weight: 900;
@@ -48,13 +48,15 @@ a{
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 8px;
   background: #eee;
   color: darkmagenta;
 }
 
 .sidebar {
-  min-width: 300px;
+  width: 300px;
+  flex-shrink: 0;
   padding: 16px;
   background: royalblue;
   box-sizing: border-box;
@@ -64,6 +66,6 @@ a{
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  width: 200px;
-  padding: 8px;
+  width: 300px;
+  padding: 16px;
 }
